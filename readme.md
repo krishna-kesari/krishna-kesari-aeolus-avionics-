@@ -91,24 +91,44 @@ Power Connections:
 - VTX → 12V rail from Power Distribution Board (PDB)
 
 
-
-
 ## Task 3: Propulsion System
 
-### Motors & Props
-- **Motors:** Holybro S500 V2 Motor 2216-920KV-CCW  
-- **Propellers:** Pro-Range Propellers 1045 (10×4.5)
+### Motors & Propellers
+- **Motors:** Holybro S500 V2 Motor 2216‑920KV‑CCW  
+- **Propellers:** Pro‑Range Propellers 1045 (10×4.5)
 
-### Battery & ESC Selection
-- **Battery:** 4S LiPo, ~6000 mAh, 40C discharge.  
-- **ESC:** 30A–40A ESCs compatible with 4S LiPo and 2216 motors.  
+### Battery Selection
+- **Chosen Battery:** 4S LiPo, 6000 mAh, 40C discharge  
+- **Reasoning:**  
+  - 4S (14.8 V) matches motor KV rating for efficient thrust.  
+  - 6000 mAh capacity balances endurance with weight (≈ 500–600 g).  
+  - 40C discharge ensures sufficient current supply (~240 A max), well above required draw.
+
+### ESC Selection
+- **Chosen ESC:** 30A–40A ESCs (BLHeli‑S or equivalent)  
+- **Reasoning:**  
+  - Each motor draws ~10–12 A at hover, peak ~20 A.  
+  - 30A ESC provides safe margin, 40A adds extra reliability.  
+  - Compatible with 4S LiPo and supports smooth throttle response.
 
 ### Endurance Calculation
-- Average current draw per motor: ~10–12 A at hover.  
-- Total current: ~40–48 A.  
-- With 6000 mAh (6 Ah) battery at 14.8V:  
-  - Endurance ≈ (6 Ah ÷ 48 A) × 60 ≈ 7.5 minutes.  
-  - With efficient flight and lower throttle (~25–30 A draw), endurance improves to ~12–14 minutes.  
+- **Hover Current per Motor:** ~10–12 A  
+- **Total Current (4 motors):** ~40–48 A  
+- **Battery Capacity:** 6000 mAh = 6 Ah  
+- **Endurance:**  
+  
+
+\[
+  \text{Endurance} = \frac{6 \text{ Ah}}{48 \text{ A}} \times 60 \approx 7.5 \text{ minutes}
+  \]
+
+  
+- **Optimized Flight (lower throttle ~25–30 A):**  
+  
+
+\[
+  \frac{6 \text{ Ah}}{30 \text{ A}} \times 60 \approx 12–14 \text{ minutes}
+  \]
 
 ### Bonus
-Alternative motors: Lower KV (~800 KV) with higher efficiency can provide better thrust per watt.
+- **Alternative Motors:** Lower KV (~800 KV) brushless motors with higher efficiency can provide better thrust per watt, extending endurance without increasing weight.
