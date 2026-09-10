@@ -112,23 +112,39 @@ Power Connections:
   - Compatible with 4S LiPo and supports smooth throttle response.
 
 ### Endurance Calculation
-- **Hover Current per Motor:** ~10–12 A  
-- **Total Current (4 motors):** ~40–48 A  
-- **Battery Capacity:** 6000 mAh = 6 Ah  
-- **Endurance:**  
-  
+Hover Current per Motor: ~10–12 A
 
-\[
-  \text{Endurance} = \frac{6 \text{ Ah}}{48 \text{ A}} \times 60 \approx 7.5 \text{ minutes}
-  \]
+Total Current (4 motors): ~40–48 A
+
+Battery Capacity: 6000 mAh = 6 Ah
+
+Endurance:
+
+Endurance
+=
+6
+ Ah
+48
+ A
+×
+60
+≈
+7.5 minutes
+
 
   
 - **Optimized Flight (lower throttle ~25–30 A):**  
-  
 
-\[
-  \frac{6 \text{ Ah}}{30 \text{ A}} \times 60 \approx 12–14 \text{ minutes}
-  \]
+6
+ Ah
+30
+ A
+×
+60
+≈
+12
+–
+14 minutes
 
 ### Bonus
 - **Alternative Motors:** Lower KV (~800 KV) brushless motors with higher efficiency can provide better thrust per watt, extending endurance without increasing weight.
