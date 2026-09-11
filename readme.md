@@ -66,7 +66,7 @@ I selected **Build 2 (OAK-D Lite + Raspberry Pi 5)**.
         UART (TELEM)       │
  ┌───────────────────────┐ │
  │ Telemetry Module       │ │
- └──────────┬────────────┘ │
+ └──────────┬────────────┘  │
             │ 915 MHz       │
             ▼               │
    Ground Station Laptop    │
@@ -90,6 +90,7 @@ Power Connections:
 - RC Receiver + Telemetry Module → 5V rail from Pixhawk
 - VTX → 12V rail from Power Distribution Board (PDB)
 
+---
 
 ## Task 3: Propulsion System
 
